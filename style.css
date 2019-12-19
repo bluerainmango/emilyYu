@@ -14,7 +14,7 @@ body {
     box-sizing: border-box;
 }
 
-/* offset for sidebar next content */
+/* Offset for content next to side nav */
 header, main{
     padding-left: 300px;
   }
@@ -65,10 +65,13 @@ header{
     display: flex;
     align-items: center;
 }
-/* Side bar */
+
+
+  /**********************************/
+  /*            Side Nav            */
+  /**********************************/
 
 .background {
-    /* width: 100%; */
     height: 30rem;
     position: relative;
 }
@@ -84,7 +87,6 @@ header{
     background-color: rgba(34, 34, 34, 0.267);
     padding: 0 3rem;
 }
-
 .background img{
     width: 100%;
     height: auto;
@@ -94,6 +96,9 @@ header{
     margin-top: 5px;
     height: 3px;
 }
-section{
+section { 
     height: 100vh;
+}
+.currentMenu *{
+    color: rgb(0, 162, 255) !important;
 }
