@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Emily Yu</title>
 </head>
@@ -24,24 +25,68 @@
           </div>
         </nav>
     </div>
-            
+           
     <header>
         <div class="header__container">
-            <div id="header__top">
-                <!-- <div class="header__left--text"> -->
+            <div class="header__intro header__intro--greet valign-wrapper">
+                <!-- <div class="header__bg--greet"></div> -->
+                <div class="header__text lax" data-lax-scale="(vh*1) 50,(vh*0.5) 30,(vh*0.1) 1" data-lax-opacity="(vh*1) 0,(vh*0.5) 1,(vh*0.1) 1">HELLO!</div>
+                <div class="hands lax" data-lax-preset="fadeOut linger">👋</div>
+            </div>
+            <!-- <div class="header__sub">I'm</div> -->
+            <div class="header__intro header__intro--name lax" data-lax-translate-x="(vh*1) (vw*0.6),(vh*0.1) 0">
+                <!-- <div class="header__bg--name"></div> -->
+                <p class="lax" data-lax-preset="blurIn">I'm Emily</p>
+            </div>
+            <div class="header__intro header__intro--location ">
+                <div class="header__layout">
+                    <p class="header__layout--1 lax" data-lax-translate-y="(vh*1) 70,(vh*0.7) 0">A full stack developer</p>
+                    <p class="header__layout--2 lax" data-lax-translate-y="(vh*1) 140,(vh*0.7) 0">A full stack developer</p>
+                    <p class="header__layout--3 lax" data-lax-translate-y="(vh*1) 210,(vh*0.7) 0">A full stack developer</p>
+                    <p>A full stack developer based in California.</p>
+                </div>
+                <div class="header__deco">
+                    <div class="header__deco--square1 lax" data-lax-translate-y="(vh*0.8) (vh*0.7),(vh*0.1) (vh*0.1)" data-lax-translate-x="(vh*0.8) 0,(vh*0.1) (vw*1.1)" data-lax-scale="(vh*1) 0,(vh*0.5) 1,(vh*0.1) 3" data-lax-preset="spinOut">🟫🔹</div>
+                    <div class="header__deco--square2 lax" data-lax-translate-y="(vh*0.8) (vh*0.8),(vh*0.1) (-vh*0.3)" data-lax-translate-x="(vh*0.8) (vw*1.1),(vh*0.1) (vw*0.3)" data-lax-scale="(vh*1) 0,(vh*0.3) 1,(vh*0.1) 3"data-lax-preset="spinOut">🔺🟩</div>
+                    <div class="header__deco--square3 lax" data-lax-translate-y="(vh*0.8) (vh*0.8),(vh*0.1) (-vh*0.3)" data-lax-translate-x="(vh*0.8) (vw*1.1),(vh*0.1) 0" data-lax-scale="(vh*1) 0,(vh*0.5) 1,(vh*0.1) 3"data-lax-preset="spinOut">🟪</div>
+                    <div class="header__deco--square3 lax" data-lax-translate-y="(vh*0.8) (vh*0.7),(vh*0.1) (vh*0.1)" data-lax-translate-x="(vh*0.8) 0,(vh*0.1) (vw*1.1)" data-lax-scale="(vh*1) 0,(vh*0.5) 1,(vh*0.1) 3" data-lax-preset="spinOut">🔶🟨</div>
+                    <!-- <div class="header__deco--square4 lax" data-lax-translate-y="(vh*0.8) (vh*0.9),(vh*0.1) (vh*0.3)" data-lax-preset="spinOut">⬛️ ⬛️</div> -->
+                </div>
+                <div class="header__skill lax" data-lax-preset="fadeIn">
+                    <div class="header__skill--icon">
+                        <div class="lax" data-lax-preset="swing">🎨</div> 
+                        <div class="lax" data-lax-preset="spin">⚙️</div>
+                    </div>
+                    <p class="header__skill--text">FRONTEND & BACKEND</p>
+                </div>  
+            </div>
+            
+            <div class="header__intro header__intro--career lax">
+                <p>
+                    <span class="lax" data-lax-preset="linger blurInOut">who fell in love with coding and</span>
+                    <br/>
+                    <span class="lax" data-lax-preset="linger blurInOut">cheated on the first-love,</span>
+                    <br/> 
+                    <span class="lax" data-lax-preset="linger blurInOut">Ecommerce & online marketing.</span>
+                </p>
+                <div class="header__deco--like">
+                    <div class="lax" data-lax-preset="slalom fadeIn">❤️❣️❤️</div> 
+                    <div class="lax" data-lax-preset="linger fadeIn">😍 🖥</div> 
+                </div>
+            </div>
+            <!-- <div id="header__top">
                     <p class="greet">HE<br/>LLO, THERE!<br/></p>
-                <!-- </div> -->
             </div>
 
             <div class="header__bottom">
                 <p class="name">I'm Emily</p>
-            </div>
+            </div> -->
         </div>
         
     </header>
-
-    <main>
-      
+<!-- HEllo, I'm Emily. A full stack developer based in California(Riverside)
+    who fell in love with coding and cheated on the first-love, Ecommerce & online marketing. -->
+    <aside>
         <ul id="slide-out" class="sidenav">
             <li>
                 <div class=profile>
@@ -103,7 +148,9 @@
                 <a class="sidenav-close" href="#!">show on m size. Fold</a>
             </li>
         </ul>
-    
+    </aside>
+
+    <main>
         <section id="about" class="scrollFollower">
             Full Stack Web Developer with 5 years of experience in E-commerce and Online marketing. Recently educated at the University of California, Riverside Extension and geared up with the skill sets in front-end and back-end development.
  
@@ -126,14 +173,16 @@
         <section id="contact" class="scrollFollower">
             This is contact
         </section>
-
+    </main>
 
                 
-    </main>
+    
     <!-- <script src="./lib/lax.min.js" ></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./lib/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script> -->
     <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
     <script src="./script.js"></script>
 </body>

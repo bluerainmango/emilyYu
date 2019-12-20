@@ -1,10 +1,15 @@
 $('document').ready(function(){
 
   // sidenav init & hide
-  $('.sidenav').sidenav(); 
+  $('.sidenav').sidenav();
+  if($(window).width() > 992)
   $('.sidenav').attr('style','display:none;')
 
+ 
 
+
+
+  
   /**********************************/
   /*            Side Nav            */
   /**********************************/
@@ -67,14 +72,17 @@ $('document').ready(function(){
 
 
 })
+window.onload=function(){
+  lax.setup() // init
 
-// window.onload = function() {
-// 	lax.setup() // init
+  const updateLax = () => {
+    lax.update(window.scrollY)
+    window.requestAnimationFrame(updateLax)
+  }
+  
+  window.requestAnimationFrame(updateLax)
+  
+}
 
-// 	const updateLax = () => {
-// 		lax.update(window.scrollY)
-// 		window.requestAnimationFrame(updateLax)
-// 	}
+	  // gsap.to(".header__text", {rotation: 27, x: 100, duration: 1});
 
-// 	window.requestAnimationFrame(updateLax)
-// }
