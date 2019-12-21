@@ -5,6 +5,7 @@ $('document').ready(function(){
   if($(window).width() > 992)
   $('.sidenav').attr('style','display:none;')
 
+  $('.carousel').carousel();
  
 
 
