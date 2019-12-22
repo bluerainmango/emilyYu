@@ -30,11 +30,25 @@
         <div class="header__container">
             <div class="header__intro header__intro--greet valign-wrapper">
 
-                <div class="header__text lax" data-lax-scale="(vh*1) 50,(vh*0.5) 30,(vh*0.1) 1" data-lax-opacity="(vh*1) 0,(vh*0.5) 1,(vh*0.1) 1">HELLO!</div>
-                <div class="hands lax" data-lax-preset="fadeOut linger">👋</div>
+                <svg viewBox="0 0 960 300">
+                    <symbol id="s-text">
+                        <text text-anchor="middle" x="50%" y="80%">Montserrat</text>
+                    </symbol>
+                
+                    <g class = "g-ants">
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                    </g>
+                </svg>
+
+                <!-- <div class="header__text lax" data-lax-scale="(vh*1) 50,(vh*0.5) 30,(vh*0.1) 1" data-lax-opacity="(vh*1) 0,(vh*0.5) 1,(vh*0.1) 1">Hello! I'm Emily</div> -->
+                
             </div>
 
-            <div class="header__intro header__intro--name lax" data-lax-translate-x="(vh*1) (vw*0.6),(vh*0.1) 0">
+            <!-- <div class="header__intro header__intro--name lax" data-lax-translate-x="(vh*1) (vw*0.6),(vh*0.1) 0">
 
                 <p class="lax" data-lax-preset="blurIn">I'm Emily</p>
             </div>
@@ -73,7 +87,7 @@
                     <div class="lax" data-lax-preset="slalom fadeIn">❤️❣️❤️</div> 
                     <div class="lax" data-lax-preset="linger fadeIn">😍 🖥</div> 
                 </div>
-            </div>
+            </div> -->
         </div>
         
     </header>
@@ -593,7 +607,7 @@
         </section>
         
         <section id="contact" class="scrollFollower height-100vh">
-            <h2 class="section__header ">Contact</h2>
+            <h2 class="section__header">Contact</h2>
             <div class="section__container">
                 <h3><blockquote>Contact</blockquote></h3>
 
@@ -619,6 +633,14 @@
                             <use xlink:href="./assets/icon/sprite.svg#icon-github"></use>
                         </svg>
                         <a href="https://github.com/bluerainmango" target="_blank">github.com/bluerainmango</a>
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <p>
+                    </span><svg class="icon">
+                        <use xlink:href="./assets/icon/sprite.svg#icon-mobile"></use>
+                    </svg>
+                        562-521-4851
                     </p>
                 </div>
                 
