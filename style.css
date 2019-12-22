@@ -317,7 +317,7 @@ main{
 
 /* PROJECTS */
 .section__container--project{
-    max-height: 110vh;
+    max-height: 100vh;
 }
 .carousel {
     height: 100rem;
@@ -377,7 +377,9 @@ main{
     height: 20rem;
     overflow: hidden;
 }
-
+#project{
+    margin-bottom: 0rem;
+}
 
 /* Experience */
 .text-header{
@@ -412,6 +414,9 @@ main{
 .card-highlight{
     background-color: rgb(68, 68, 68);
     color: #fff;
+}
+#experience{
+    margin-bottom: 28rem;
 }
 
 /* Pulse wave button */
@@ -555,7 +560,9 @@ main{
     display: flex;
     font-size: 1.3rem;
 }
-
+#education{
+    margin-bottom: 10rem;
+}
 
 /* Contact */
 .contact-info{
@@ -675,9 +682,10 @@ blockquote{
 
 }
 
-/* Responsive - Experience */
+/* Responsive - Experience, Education(text) */
 @media only screen and (max-width: 450px){
     .card-content p,
+    li,
     .card-link{
         font-size: 1.3rem;
     }
@@ -693,6 +701,9 @@ blockquote{
     }
     .ta img{
         border-radius: 50%;
+    }
+    .grade{
+        font-size: 1.5rem;
     }
 }
 @media only screen and (max-width: 1200px) and (min-width: 993px){
@@ -740,6 +751,9 @@ blockquote{
 @media only screen and (max-width: 460px){
     .contact-info{
         margin: 0 0 3rem 0;
+    }
+    .contact-info svg{
+        width: 3rem;
     }
 }
 
