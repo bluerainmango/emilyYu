@@ -234,9 +234,9 @@ header{
     margin-top: 5px;
     height: 3px;
 }
-section { 
+/* section { 
     height: 100vh;
-}
+} */
 .currentMenu *{
     color: rgb(0, 162, 255) !important;
 }
@@ -278,14 +278,14 @@ main{
     position: relative;
     
 }
-.section__container::before{
+/* .section__container::before{
     content: '|';
     color: rgb(0, 162, 255);
     font-size: 5rem;
     position: absolute;
     top: -22px;
     left: -3px;
-}
+} */
 .section__container h3{
     padding-left: 1rem;
     margin: 5rem 0;
@@ -307,11 +307,12 @@ main{
     color: rgb(94, 94, 94);
 }
 .section__slot img{
-    width: 10rem;
+    width: 6rem;
     margin-right: 3rem;
 }
 
 /* PROJECTS */
+
 .carousel {
     height: 100rem;
     transform: translateY(-40rem);
@@ -343,6 +344,7 @@ main{
     display:flex;
     justify-content: flex-start;
     padding: 2rem 0;
+    align-items: center;
     /* padding-left: 0; */
 }
 .card-link > *{
@@ -379,9 +381,7 @@ main{
     }
 }
 /* Experience */
-.margin-top-3{
-    margin-top: 3rem;
-}
+
 .card.wide{
     width:100%;
 }
@@ -390,16 +390,82 @@ main{
     margin-left: 1.5rem;
     font-size: 1.5rem;
 }
-.inside-center{
-    display: flex;
-    justify-content: space-between;
-}
-.max-width{
-    width: 100% !important;
-}
+
+.play-btn {
+    color: #fff;
+    width: 10rem;
+    height: 5rem;
+    background-color: rgb(0, 162, 255);
+    border-radius: 2%;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    box-shadow: 0px 0px 25px 3px rgba(0, 110, 255, 0.8);
+  }
+
+  /* pulse wave */
+.play-btn:before {
+    content: "";
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation: pulsate1 2s;
+    animation: pulsate1 2s;
+    -webkit-animation-direction: forwards;
+    animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 0%;
+    border: 5px solid rgba(255, 255, 255, .75);
+    top: -35%;
+    left: -35%;
+    background: rgba(198, 16, 0, 0);
+  }
+  
+  @-webkit-keyframes pulsate1 {
+    0% {
+      -webkit-transform: scale(0.6);
+      transform: scale(0.6);
+      opacity: 1;
+      box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+    }
+    100% {
+      -webkit-transform: scale(.8);
+      transform: scale(.8);
+      opacity: 0;
+      box-shadow: none;
+  
+    }
+  }
+  
+  @keyframes pulsate1 {
+    0% {
+      -webkit-transform: scale(0.6);
+      transform: scale(0.6);
+      opacity: 1;
+      box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+    }
+    100% {
+      -webkit-transform: scale(.8, .8);
+      transform: scale(.8);
+      opacity: 0;
+      box-shadow: none;
+  
+    }
+  }
 
 .halfway-fab{
     border-radius: 0;
+}
+.card-highlight{
+    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(68, 68, 68);
+    color: #fff;
 }
 /* border animation */
 .gradient-border {
@@ -448,3 +514,85 @@ main{
           background-position: 0% 50%;
       }
   }
+
+  /* Education */
+.card-left{
+    width: 30rem;
+}
+.card-img-edu{
+      width: 10rem;
+      margin: 1.5rem auto 0 auto;
+  }
+
+.card-restyle-edu{
+    box-shadow: none;
+    border-left: 2px rgb(0, 162, 255) solid;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.moving-icon{
+    transform: translate(-2rem,1rem);
+}
+.icon-bg{
+    background-color: rgb(255, 255, 255);
+}
+.ta img{
+    width: 15rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+.comment{
+    display: flex;
+    font-size: 1.5rem;
+}
+
+/* Contact */
+.contact-info{
+    margin: 0 auto 3rem 4rem;
+}
+.contact-info > *{
+    display: flex;
+    align-items: center;
+    font-size: 1.75rem;
+}
+.contact-info > svg{
+    width: 5rem;
+}
+
+.icon {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    margin-right: 2rem;
+  }
+
+
+/* UTILITY */
+.height-100vh{
+    height: 100vh;
+}
+.no-margin{
+    margin:0;
+}
+.inside-center{
+    display: flex;
+    justify-content: space-between;
+}
+.max-width{
+    width: 100% !important;
+}
+.margin-top-3{
+    margin-top: 3rem;
+}
+/* .front{
+    position: relative;
+    z-index: 100;
+}
+.behind{
+    position: relative;
+    z-index: -100;
+} */

@@ -6,7 +6,7 @@ $('document').ready(function(){
   $('.sidenav').attr('style','display:none;')
 
   $('.carousel').carousel();
- 
+  $('.collapsible').collapsible();
 
 
 
