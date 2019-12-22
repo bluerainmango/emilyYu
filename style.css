@@ -348,7 +348,7 @@ main{
     /* padding-left: 0; */
 }
 .card-link > *{
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 .card-link a{
     color: rgb(0, 162, 255);
@@ -392,17 +392,23 @@ main{
 }
 
 .play-btn {
-    color: #fff;
-    width: 10rem;
+    color: #fff !important;
+    /* text-align: center; */
+    width: 15rem;
     height: 5rem;
+    display: flex;
+    justify-content: center;
     background-color: rgb(0, 162, 255);
     border-radius: 2%;
     position: relative;
-    display: block;
-    cursor: pointer;
+    /* display: block; */
     box-shadow: 0px 0px 25px 3px rgba(0, 110, 255, 0.8);
   }
-
+.play-btn > p{
+    height: 100%;
+    text-align: center;
+    /* padding: 3rem; */
+}
   /* pulse wave */
 .play-btn:before {
     content: "";
@@ -587,6 +593,12 @@ main{
 }
 .margin-top-3{
     margin-top: 3rem;
+}
+blockquote{
+    border-left-color:rgb(0, 162, 255);
+}
+.line-height-m{
+    line-height: 1.75;
 }
 /* .front{
     position: relative;
