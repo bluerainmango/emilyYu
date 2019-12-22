@@ -260,11 +260,13 @@ header{
 }
 nav{
     width: 100vh;
+    background-color: rgb(0, 162, 255);
 }
 nav,
 .nav-wrapper{
     width:100vw !important;
 }
+
 /**********************************/
 /*               Main             */
 /**********************************/
@@ -276,6 +278,8 @@ main{
   }
 .section__header{
     background-color: rgb(0, 162, 255);
+    /* #0d47a1, #2196f3, #a3ddff  */
+    background-image: linear-gradient(to right, rgb(0, 162, 255), #0d47a1);
     color: #fff;
     padding: 3rem 3rem 3rem 3rem;
     margin: 0;
