@@ -282,13 +282,12 @@ main{
 }
 .section__container{
     max-width: 80%;
-    /* height: 100%; */
+    /* max-height: 110vh; */
     margin: 0 auto;
     position: relative;
     
 }
 .section__container h3{
-    padding-left: 1rem;
     margin: 5rem 0;
 }
 
@@ -303,6 +302,7 @@ main{
     margin-bottom: 2rem;
 }
 
+
 /* SKILLS */
 .section__slot{
     margin: 0 0 3rem 1rem;
@@ -316,6 +316,9 @@ main{
 }
 
 /* PROJECTS */
+.section__container--project{
+    max-height: 110vh;
+}
 .carousel {
     height: 100rem;
     transform: translateY(-40rem);
@@ -374,13 +377,12 @@ main{
     height: 20rem;
     overflow: hidden;
 }
-@media only screen and (max-width : 992px) {
-    header, main {
-        padding-left: 0;
-    }
-}
+
 
 /* Experience */
+.text-header{
+    font-size: 2rem !important;
+}
 .card.wide{
     width:100%;
 }
@@ -515,7 +517,10 @@ main{
       }
   }
 
+  
+
 /* Education */
+
 .collapsible-body{
     line-height: 1.75;
 }
@@ -542,14 +547,15 @@ main{
     background-color: rgb(255, 255, 255);
 }
 .ta img{
-    width: 15rem;
+    max-width: 10rem;
     margin-right: 1rem;
     border-radius: 50%;
 }
 .comment{
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
+
 
 /* Contact */
 .contact-info{
@@ -588,11 +594,15 @@ main{
 .max-width{
     width: 100% !important;
 }
+
 .margin-top-3{
     margin-top: 3rem;
 }
 .margin-bottom-3{
     margin-bottom: 3rem;
+}
+.margin-bottom-15{
+    margin-bottom: 15rem;
 }
 blockquote{
     border-left-color:rgb(0, 162, 255);
@@ -600,3 +610,196 @@ blockquote{
 .line-height-m{
     line-height: 1.75;
 }
+.no-max-height{
+    max-height: none;
+}
+
+/* Responsive */
+
+/* Responsive - Header, Main */
+@media only screen and (max-width : 992px) {
+    header, main {
+        padding-left: 0;
+    }
+    blockquote{
+        font-size: 2.5rem;
+    }
+    .header__intro > .text{
+        font-size: 4rem;
+        transform: translateY(-4rem);
+    }
+}
+
+/* Responsive - Header(title), About */
+@media only screen and (max-width: 550px){
+    .header__intro > .text{
+        font-size: 3rem;
+        /* transform: translateY(-4rem) */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .word-group{
+        transform: translateX(-15rem)
+    }
+    .section__container{
+        max-width: 90%;
+    } 
+    .section__description{
+
+        font-size: 1.5rem ;
+    }
+}
+
+
+/* Responsive - Main, Skill, Projects */
+@media only screen and (max-width: 460px){
+
+    .section__slot img{
+        width: 4.5rem;
+        margin-right: 2rem;
+    }
+
+    .carousel-item,
+    .carousel-item > .card{
+        width: 30rem !important;
+        transform: translateX(0.4rem);
+    }
+
+    .section__container:not(.no-height){
+        max-height: 100vh;
+    }
+    .card-content{
+        padding: 1.5rem;
+    }
+
+}
+
+/* Responsive - Experience */
+@media only screen and (max-width: 450px){
+    .card-content p,
+    .card-link{
+        font-size: 1.3rem;
+    }
+    #experience{
+        margin-bottom: 21rem;
+    }
+}
+
+/* Responsive - Education */
+@media only screen and (max-width: 1360px){
+    figure{
+        margin: 1rem 0;
+    }
+    .ta img{
+        border-radius: 50%;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 993px){
+    .card.horizontal{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-image{
+        height: auto;
+    }
+    .ta{
+        margin: 0 3rem;
+        display:flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 900px){
+    .card.horizontal{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-image{
+        height: auto;
+    }
+    .comment{
+        flex-direction: column;
+    }
+    .ta {
+        margin: 1rem auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ta img{
+        max-width: 7rem;
+        border-radius: 50%;
+    }
+    .comment-words{
+       font-size: 1.3rem;
+    }
+}
+
+
+/* Responsive - Contact */
+@media only screen and (max-width: 460px){
+    .contact-info{
+        margin: 0 0 3rem 0;
+    }
+}
+
+
+/* 
+.carousel {
+    height: 100rem;
+    transform: translateY(-40rem);
+}
+.carousel-item{
+    width: 40rem !important;
+    margin: 0 auto;
+}
+.card{
+    width: 40rem;
+}
+.card-header{
+  display:flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.card-header :first-child{
+    margin-right: 2rem;
+}
+.card-content{
+    padding-bottom: 0 !important;
+    font-size: 1.6rem;
+}
+.card-link{
+    border-top: rgb(197, 197, 197) 1px solid;
+    display:flex;
+    justify-content: flex-start;
+    padding: 2rem 0;
+    align-items: center;
+}
+.card-link > *{
+    margin-right: 3rem;
+}
+.card-link a{
+    color: rgb(0, 162, 255);
+}
+.card-header--team,
+.card-header--sole,
+.card-tag span{
+    background-color: rgb(0, 162, 255);
+    padding: 3px 5px;
+    color: #fff;
+    border-radius: 10%;
+    font-size: 1.3rem;
+}
+.card-header--team{
+    background-color: rgb(255, 115, 0);
+}
+.card-header--sole{
+    background-color: rgb(0, 128, 11);
+}
+.card-tag{
+    margin: 1rem 0;
+}
+.card-image{
+    height: 20rem;
+    overflow: hidden;
+} */
