@@ -98,7 +98,7 @@ setInterval(changeWord, 4000);
       }
   })
 
-  // Sidenav's Scroll Follower : Notifing which menu is seen on the screen.
+  // Sidenav's Scroll Follower : Notifing which menu's page is being seen on the screen.
   const scrollFollowers = $('.scrollFollower');
  
         scrollFollowers.each((i,el) => {
@@ -108,8 +108,16 @@ setInterval(changeWord, 4000);
                             $('.currentMenu').removeClass('currentMenu')
 
                             if(direction === "down"){
-                              console.log('scroll down' , i, el.id);
-                              $(`.${el.id}`).addClass('currentMenu');
+                              // console.log('scroll down' , i, el.id);
+                              // $(`.${el.id}`).addClass('currentMenu');
+
+                              const navMenuClassArr = $('.menu').map( (i,el) => 
+                                                          el.getAttribute('class').split(' ')[1] 
+                                                          ).get();
+
+                              console.log('scroll up' , i+1, navMenuClassArr[i+1]);
+                              $(`.${navMenuClassArr[i+1]}`).addClass('currentMenu');
+
                             }
                             else{
                               // get nav menu class arr : [about, skill, project...] 
@@ -117,8 +125,8 @@ setInterval(changeWord, 4000);
                                                           el.getAttribute('class').split(' ')[1] 
                                                           ).get();
 
-                              console.log('scroll up' , i-1, navMenuClassArr[i-1]);
-                              $(`.${navMenuClassArr[i-1]}`).addClass('currentMenu');
+                              console.log('scroll up' , i, navMenuClassArr[i]);
+                              $(`.${navMenuClassArr[i]}`).addClass('currentMenu');
                             }
                 }
             });

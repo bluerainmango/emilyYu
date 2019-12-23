@@ -578,6 +578,9 @@ main{
 }
 
 /* Contact */
+#contact{
+    min-height: 100vh;
+}
 .contact-info{
     margin: 0 auto 3rem 4rem;
 }
@@ -601,9 +604,7 @@ main{
 
 
 /* UTILITY */
-.height-100vh{
-    /* height: 100vh; */
-}
+
 .no-margin{
     margin:0;
 }
@@ -635,6 +636,20 @@ blockquote{
 }
 
 /* Responsive */
+
+/* Anchor */
+@media only screen and (max-width : 992px) {
+   .anchor{
+       position: relative;
+       top: -64px;
+   }
+}
+
+@media only screen and (max-width : 600px){
+    .anchor{
+        top: -54px;
+    }
+}
 
 /* Responsive - Header, Main */
 @media only screen and (max-width : 992px) {
