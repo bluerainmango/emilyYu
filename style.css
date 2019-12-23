@@ -20,6 +20,7 @@ body {
     max-width: 100%;
 }
 
+
 /**********************************/
 /*            Header              */
 /**********************************/
@@ -134,7 +135,7 @@ header{
     height: 100%;
     background-color: rgb(0, 162, 255);
     width: 30rem;
-    z-index: -20;
+    /* z-index: -20; */
 }
 
 /**********************************/
@@ -260,7 +261,7 @@ header{
 }
 nav{
     width: 100vh;
-    background-color: rgb(0, 162, 255);
+    background-color: rgb(0, 162, 255) !important;
 }
 nav,
 .nav-wrapper{
@@ -277,8 +278,6 @@ main{
     width: 100%;
   }
 .section__header{
-    background-color: rgb(0, 162, 255);
-    /* #0d47a1, #2196f3, #a3ddff  */
     background-image: linear-gradient(to right, rgb(0, 162, 255), #0d47a1);
     color: #fff;
     padding: 3rem 3rem 3rem 3rem;
@@ -298,6 +297,8 @@ main{
 /* ABOUT */
 #about{
     position: relative;
+    /* height: 100vh; */
+    margin-bottom: 7rem;
 }
 .section__description{
     font-size: 1.7rem;
@@ -308,6 +309,9 @@ main{
 
 
 /* SKILLS */
+#skill{
+    margin-bottom: 7rem;
+}
 .section__slot{
     margin: 0 0 3rem 1rem;
 }
@@ -321,7 +325,9 @@ main{
 
 /* PROJECTS */
 .section__container--project{
-    max-height: 100vh;
+    max-height: 106vh;
+    overflow: hidden;
+
 }
 .carousel {
     height: 100rem;
@@ -420,7 +426,7 @@ main{
     color: #fff;
 }
 #experience{
-    margin-bottom: 28rem;
+    margin-bottom: 12rem;
 }
 
 /* Pulse wave button */
@@ -593,7 +599,7 @@ main{
 
 /* UTILITY */
 .height-100vh{
-    height: 100vh;
+    /* height: 100vh; */
 }
 .no-margin{
     margin:0;
@@ -632,12 +638,26 @@ blockquote{
     header, main {
         padding-left: 0;
     }
+    header{
+        height: calc(100vh - 64px);
+    }
+    .header__intro--greet{
+        transform: translateY(-50px); 
+     }
     blockquote{
         font-size: 2.5rem;
     }
     .header__intro > .text{
         font-size: 4rem;
         transform: translateY(-4rem);
+    }
+}
+@media only screen and (max-width : 600px){
+    header{
+        height: calc(100vh - 56px);
+    }
+    .header__intro--greet{
+       transform: translateY(-50px); 
     }
 }
 
@@ -678,7 +698,7 @@ blockquote{
     }
 
     .section__container:not(.no-height){
-        max-height: 100vh;
+        /* max-height: 100vh; */
     }
     .card-content{
         padding: 1.5rem;
@@ -694,7 +714,7 @@ blockquote{
         font-size: 1.3rem;
     }
     #experience{
-        margin-bottom: 21rem;
+        margin-bottom: 9rem;
     }
 }
 
