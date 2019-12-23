@@ -107,26 +107,22 @@ setInterval(changeWord, 4000);
                 handler: function(direction){
                             $('.currentMenu').removeClass('currentMenu')
 
-                            if(direction === "down"){
-                              // console.log('scroll down' , i, el.id);
-                              // $(`.${el.id}`).addClass('currentMenu');
-
-                              const navMenuClassArr = $('.menu').map( (i,el) => 
+                            // get nav menu class arr : [about, skill, project...] 
+                            const navMenuClassArr = $('.menu').map( (i,el) => 
                                                           el.getAttribute('class').split(' ')[1] 
                                                           ).get();
+
+                            if(direction === "down"){
 
                               console.log('scroll up' , i+1, navMenuClassArr[i+1]);
                               $(`.${navMenuClassArr[i+1]}`).addClass('currentMenu');
 
                             }
                             else{
-                              // get nav menu class arr : [about, skill, project...] 
-                              const navMenuClassArr = $('.menu').map( (i,el) => 
-                                                          el.getAttribute('class').split(' ')[1] 
-                                                          ).get();
-
+                              
                               console.log('scroll up' , i, navMenuClassArr[i]);
                               $(`.${navMenuClassArr[i]}`).addClass('currentMenu');
+                              
                             }
                 }
             });
