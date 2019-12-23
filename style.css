@@ -374,7 +374,7 @@ main{
     color: rgb(0, 162, 255);
 }
 .card-header--team,
-.card-header--sole,
+.card-header--indv,
 .card-tag span{
     background-color: rgb(0, 162, 255);
     padding: 3px 5px;
@@ -385,7 +385,7 @@ main{
 .card-header--team{
     background-color: rgb(255, 115, 0);
 }
-.card-header--sole{
+.card-header--indv{
     background-color: rgb(0, 128, 11);
 }
 .card-tag{
@@ -644,8 +644,12 @@ blockquote{
 
 /* Anchor */
 @media only screen and (max-width : 992px) {
+
+    .scrollFollower{
+        position: relative;   
+    }
    .anchor{
-       position: relative;
+       position: absolute;
        top: -64px;
    }
 }
@@ -710,6 +714,13 @@ blockquote{
 @media only screen and (max-width: 993px){
     .section__header{
         padding: 1rem 3rem; 
+    }
+    .card-header :first-child{
+        margin-right: 0.5rem;
+    }
+    .card-header{
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 @media only screen and (max-width: 460px){
