@@ -11,7 +11,7 @@ $('document').ready(function(){
 
   // Header Animation
 
-  var words = document.getElementsByClassName('word');
+var words = document.getElementsByClassName('word');
 var wordArray = [];
 var currentWord = 0;
 
@@ -122,7 +122,7 @@ setInterval(changeWord, 4000);
                               
                               console.log('scroll up' , i, navMenuClassArr[i]);
                               $(`.${navMenuClassArr[i]}`).addClass('currentMenu');
-                              
+
                             }
                 }
             });
@@ -147,5 +147,4 @@ window.onload=function(){
   
 }
 
-	  // gsap.to(".header__text", {rotation: 27, x: 100, duration: 1});
 

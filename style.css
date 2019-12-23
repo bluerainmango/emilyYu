@@ -139,7 +139,7 @@ header{
 
 .downArrow{
     position: absolute;
-    bottom: 5rem;
+    bottom: 8rem;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -330,11 +330,16 @@ main{
 .section__container--project{
     max-height: 106vh;
     overflow: hidden;
-
 }
 .carousel {
     height: 100rem;
     transform: translateY(-40rem);
+}
+.carousel-help{
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    color: rgb(148, 148, 148);
 }
 .carousel-item{
     width: 40rem !important;
@@ -702,6 +707,11 @@ blockquote{
 
 
 /* Responsive - Main, Skill, Projects */
+@media only screen and (max-width: 993px){
+    .section__header{
+        padding: 1rem 3rem; 
+    }
+}
 @media only screen and (max-width: 460px){
 
     .section__slot img{
