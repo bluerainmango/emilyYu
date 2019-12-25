@@ -10,7 +10,7 @@
 }
 html{
     font-size: 62.5%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
 body {
@@ -72,10 +72,11 @@ header{
     margin-top: -20px;
   }
   
-  p {
+  header p {
     display: inline-block;
     vertical-align: top;
     margin: 0;
+    text-shadow: 1px 1px 3px rgb(116, 116, 116);
   }
   
   .word {
@@ -94,7 +95,7 @@ header{
   
   .letter.out {
     transform: rotateX(90deg);
-    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: transform 0.20s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
   
   .letter.behind {
@@ -107,7 +108,7 @@ header{
   }
   
   .first {
-    color: #e53935;
+    color: #EA2027;
   }
   
   .second {
@@ -115,7 +116,7 @@ header{
   }
   
   .third {
-    color: #ea80fc;
+    color: #4cd137;
   }
   
   .fourth {
@@ -312,6 +313,7 @@ main{
     margin-right: 3rem;
 }
 
+
 /* PROJECTS */
 .section__container--project{
     max-height: 100vh;
@@ -428,6 +430,7 @@ main{
 #experience{
     margin-bottom: 20rem;
 }
+
 
 /* Pulse wave button */
 .play-btn:before {
@@ -576,6 +579,9 @@ main{
 #education{
     margin-bottom: 10rem;
 }
+#education h5{
+    font-weight: bold;
+}
 
 /* Contact */
 #contact{
@@ -641,147 +647,8 @@ blockquote{
 /*           Responsive           */
 /**********************************/
 
-/* Responsive - Sidenav */
-@media only screen and (max-width : 600px){
-
-    .sidenav{
-        width: 220px;
-    }
-       .profileInfo{
-        top: 180px;
-        left: -14px;
-        line-height: 1.5;
-        font-size: 12px;
-    }
-    .background{
-        height:219px;
-    }
-}
-/* Responsive - Anchor */
-@media only screen and (max-width : 992px) {
-
-    .scrollFollower{
-        position: relative;   
-    }
-   .anchor{
-       position: absolute;
-       top: -64px;
-   }
-}
-
-@media only screen and (max-width : 600px){
-    .anchor{
-        top: -54px;
-    }
-}
-
-/* Responsive - Header, Main, About, Skill */
-@media only screen and (max-width : 992px) {
-    header, main {
-        padding-left: 0;
-    }
-    header{
-        height: calc(100vh - 64px);
-    }
-    .header__intro--greet{
-        transform: translateY(-50px); 
-     }
-    blockquote{
-        font-size: 2.5rem;
-    }
-    .header__intro > .text{
-        font-size: 4rem;
-        transform: translateY(-4rem);
-    }
-}
-@media only screen and (max-width : 600px){
-    header{
-        height: calc(100vh - 56px);
-    }
-    .header__intro--greet{
-       transform: translateY(-50px); 
-    }
-    #about{
-        margin-bottom: 7rem;
-    }
-    #skill{
-        margin-bottom: 10rem;
-    }
-}
-
-/* Responsive - Header(title), About */
-@media only screen and (max-width: 550px){
-    .header__intro > .text{
-        font-size: 3rem;
-        /* transform: translateY(-4rem) */
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .word-group{
-        transform: translateX(-15rem)
-    }
-    .section__container{
-        max-width: 90%;
-    } 
-    .section__description{
-        font-size: 1.5rem ;
-    }
-}
-
-
-/* Responsive - Main, Skill, Projects */
-@media only screen and (max-width: 993px){
-    .section__header{
-        padding: 1rem 3rem; 
-    }
-    .card-header :first-child{
-        margin-right: 0.5rem;
-    }
-    .card-header{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-@media only screen and (max-width: 460px){
-
-    .section__slot--title{
-        font-size: 1.7rem;
-    }
-    .section__slot img{
-        width: 4.5rem;
-        margin-right: 1rem;
-    }
-
-    .carousel-item,
-    .carousel-item > .card{
-        width: 30rem !important;
-        transform: translateX(0.4rem);
-    }
-
-    .card-content{
-        padding: 1.5rem;
-    }
-    .section__container--project{
-        max-height: 106vh;
-    }
-
-}
-
-/* Responsive - Experience, Education(text) */
-@media only screen and (max-width: 450px){
-    .card-content p,
-    li,
-    .card-link{
-        font-size: 1.3rem;
-    }
-    #experience{
-        margin-bottom: 9rem;
-    }
-}
-
-/* Responsive - Education */
 @media only screen and (max-width: 1360px){
+    /* Education */
     figure{
         margin: 1rem 0;
     }
@@ -792,8 +659,9 @@ blockquote{
         font-size: 1.5rem;
     }
 }
-@media only screen and (max-width: 1200px) and (min-width: 993px){
 
+@media only screen and (max-width: 1200px) and (min-width: 993px){
+    /* Education */
     .card.horizontal{
         display: flex;
         flex-direction: column;
@@ -807,8 +675,52 @@ blockquote{
         flex-direction: column;
     }
 }
-@media only screen and (max-width: 900px){
 
+@media only screen and (max-width : 992px) {
+    /* Header */
+    header, main {
+        padding-left: 0;
+    }
+    header{
+        height: calc(100vh - 64px);
+    }
+    .header__intro--greet{
+        transform: translateY(-50px); 
+        }
+    .header__intro > .text{
+        font-size: 4rem;
+        transform: translateY(-4rem);
+    }
+
+    /* Anchor */
+    .scrollFollower{
+        position: relative;   
+    }
+    .anchor{
+    position: absolute;
+    top: -64px;
+    }
+
+    /* Projects */
+    .card-header :first-child{
+        margin-right: 0.5rem;
+    }
+    .card-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    blockquote{
+        font-size: 2.5rem;
+    }
+
+    .section__header{
+        padding: 1rem 3rem; 
+    }
+}
+
+@media only screen and (max-width: 900px){
+    /* Education */
     .card.horizontal{
         display: flex;
         flex-direction: column;
@@ -830,19 +742,49 @@ blockquote{
         border-radius: 50%;
     }
     .comment-words{
-       font-size: 1.3rem;
+       font-size: 1.4rem;
     }
 }
 
-/* Responsive - Contact */
-@media only screen and (max-width: 460px){
-    .contact-info{
-        margin: 0 0 3rem 0;
+@media only screen and (max-width : 600px){
+     /* Sidenav */
+     .sidenav{
+        width: 220px;
     }
-    .contact-info svg{
-        width: 3rem;
+    .profileInfo{
+        top: 180px;
+        left: -14px;
+        line-height: 1.5;
+        font-size: 12px;
+    }
+    .background{
+        height:219px;
+    }
+
+    /* Header */
+    header{
+        height: calc(100vh - 56px);
+    }
+    .header__intro--greet{
+       transform: translateY(-50px); 
+    }
+
+    /* About */
+    #about{
+        margin-bottom: 7rem;
+    }
+
+    /* Skill */
+    #skill{
+        margin-bottom: 10rem;
+    }
+
+    /* Anchor */
+    .anchor{
+        top: -54px;
     }
 }
+
 /* Responsive - landscape */
 @media only screen and (max-width: 600px) and (orientation: landscape){
     .section__container--project{
@@ -854,3 +796,82 @@ blockquote{
         margin-bottom: 10rem ;
     }
 }
+
+@media only screen and (max-width: 550px){
+    /* Header*/
+    .header__intro > .text{
+        font-size: 3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .word-group{
+        transform: translateX(-15rem)
+    }
+    .section__container{
+        max-width: 90%;
+    } 
+
+    /* About */
+    .section__description{
+        font-size: 1.5rem ;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    /* Skill */
+    .section__slot--title{
+        font-size: 1.7rem;
+    }
+    .section__slot img{
+        width: 4.5rem;
+        margin-right: 1rem;
+    }
+
+    /* Projects */
+    .carousel-item,
+    .carousel-item > .card{
+        width: 30rem !important;
+        transform: translateX(0.4rem);
+    }
+    .card-content{
+        padding: 1.5rem;
+    }
+    .section__container--project{
+        max-height: 106vh;
+    }
+
+    /* Contact */
+    .contact-info{
+        margin: 0 0 3rem 0;
+    }
+    .contact-info svg{
+        width: 3rem;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    /* Experience, Education(text) */
+    .card-content p,
+    li,
+    .card-link{
+        font-size: 1.3rem;
+    }
+    #experience{
+        margin-bottom: 9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
