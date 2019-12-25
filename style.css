@@ -11,7 +11,6 @@
 html{
     font-size: 62.5%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -128,7 +127,7 @@ header{
     content: '';
     position: absolute;
     left: -30rem;
-    height: 100%;
+    height: 100vh;
     background-color: rgb(0, 162, 255);
     width: 30rem;
 }
@@ -288,7 +287,7 @@ main{
 /* ABOUT */
 #about{
     position: relative;
-    margin-bottom: 7rem;
+    margin-bottom: 36rem;
 }
 .section__description{
     font-size: 1.7rem;
@@ -300,7 +299,7 @@ main{
 
 /* SKILLS */
 #skill{
-    margin-bottom: 7rem;
+    margin-bottom: 20rem;
 }
 .section__slot{
     margin: 0 0 3rem 1rem;
@@ -398,6 +397,12 @@ main{
     margin-left: 1.5rem;
     font-size: 1.5rem;
 }
+.card-reveal .card-title{
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
 .play-btn {
     color: #fff !important;
     width: 15rem;
@@ -421,7 +426,7 @@ main{
     color: #fff;
 }
 #experience{
-    margin-bottom: 12rem;
+    margin-bottom: 20rem;
 }
 
 /* Pulse wave button */
@@ -442,7 +447,7 @@ main{
     animation-timing-function: steps;
     opacity: 1;
     border-radius: 0%;
-    border: 5px solid rgba(255, 255, 255, .75);
+    border: 3px solid rgba(255, 255, 255, .75);
     top: -35%;
     left: -35%;
     background: rgba(198, 16, 0, 0);
@@ -667,7 +672,7 @@ blockquote{
     }
 }
 
-/* Responsive - Header, Main */
+/* Responsive - Header, Main, About, Skill */
 @media only screen and (max-width : 992px) {
     header, main {
         padding-left: 0;
@@ -693,6 +698,12 @@ blockquote{
     .header__intro--greet{
        transform: translateY(-50px); 
     }
+    #about{
+        margin-bottom: 7rem;
+    }
+    #skill{
+        margin-bottom: 10rem;
+    }
 }
 
 /* Responsive - Header(title), About */
@@ -711,7 +722,6 @@ blockquote{
         max-width: 90%;
     } 
     .section__description{
-
         font-size: 1.5rem ;
     }
 }
@@ -818,7 +828,6 @@ blockquote{
     }
 }
 
-
 /* Responsive - Contact */
 @media only screen and (max-width: 460px){
     .contact-info{
@@ -826,5 +835,16 @@ blockquote{
     }
     .contact-info svg{
         width: 3rem;
+    }
+}
+/* Responsive - landscape */
+@media only screen and (orientation: landscape){
+    .section__container--project{
+        max-height: 206vh;
+    }
+    #about,
+    #skill,
+    #experience{
+        margin-bottom: 10rem ;
     }
 }
