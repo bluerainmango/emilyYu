@@ -746,6 +746,18 @@ blockquote{
     }
 }
 
+/* Responsive - landscape */
+@media only screen and (max-width: 850px) and (orientation: landscape){
+    .section__container--project{
+        max-height: 206vh;
+    }
+    #about,
+    #skill,
+    #experience{
+        margin-bottom: 10rem ;
+    }
+}
+
 @media only screen and (max-width : 600px){
      /* Sidenav */
      .sidenav{
@@ -782,18 +794,6 @@ blockquote{
     /* Anchor */
     .anchor{
         top: -54px;
-    }
-}
-
-/* Responsive - landscape */
-@media only screen and (max-width: 600px) and (orientation: landscape){
-    .section__container--project{
-        max-height: 206vh;
-    }
-    #about,
-    #skill,
-    #experience{
-        margin-bottom: 10rem ;
     }
 }
 
