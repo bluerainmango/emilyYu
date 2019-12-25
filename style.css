@@ -206,8 +206,8 @@ header{
 @media only screen and (max-width: 992px){
     .header__intro--greet,
     .header__intro--name{
-    font-size: 5rem;
-}
+        font-size: 5rem;
+    }
 }
 /**********************************/
 /*            Side Nav            */
@@ -314,7 +314,7 @@ main{
 
 /* PROJECTS */
 .section__container--project{
-    max-height: 106vh;
+    max-height: 100vh;
     overflow: hidden;
 }
 .carousel {
@@ -548,7 +548,7 @@ main{
 .card-img-edu{
       width: 10rem;
       margin: 1.5rem auto 0 auto;
-  }
+}
 .card-restyle-edu{
     box-shadow: none;
     border-left: 2px rgb(0, 162, 255) solid;
@@ -569,6 +569,9 @@ main{
 .comment{
     display: flex;
     font-size: 1.3rem;
+}
+#education .card{
+    border-radius: 0;
 }
 #education{
     margin-bottom: 10rem;
@@ -759,6 +762,9 @@ blockquote{
     .card-content{
         padding: 1.5rem;
     }
+    .section__container--project{
+        max-height: 106vh;
+    }
 
 }
 
@@ -838,7 +844,7 @@ blockquote{
     }
 }
 /* Responsive - landscape */
-@media only screen and (orientation: landscape){
+@media only screen and (max-width: 600px) and (orientation: landscape){
     .section__container--project{
         max-height: 206vh;
     }
